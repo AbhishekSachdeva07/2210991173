@@ -46,7 +46,7 @@ const getLatestPosts = async () => {
     allPosts = allPosts.concat(posts);
   }
 
-  return allPosts.sort((a, b) => b.id - a.id).slice(0, 5); // Assuming 'id' as proxy for newest
+  return allPosts.sort((a, b) => b.id - a.id).slice(0, 5);
 };
 
 module.exports = { getTopUsersByComments, getPopularPosts, getLatestPosts };
